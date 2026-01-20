@@ -4,6 +4,7 @@ source "https://rubygems.org"
 gem 'friendly_id', '~> 5.5.0'
 # My custom gems end here
 gem 'sassc-rails'
+gem 'concurrent-ruby', '~> 1.3.4'
 gem 'uglifier' # Optional, for JS compression
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem "rails", "~> 7.2.2", ">= 7.2.2.1"

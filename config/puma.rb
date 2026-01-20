@@ -1,10 +1,12 @@
-workers 1
-threads 1, 3
+threads_count = ENV.fetch("RAILS_MAX_THREADS", 3)
+threads threads_count, threads_count
 
-app_dir = File.expand_path("../..", __FILE__)
-directory app_dir
-environment "production"
-bind "unix://#{app_dir}/tmp/sockets/puma.sock"
-stdout_redirect "#{app_dir}/log/puma.stdout.log", "#{app_dir}/log/puma.stderr.log", true
-daemonize true
-pidfile "#{app_dir}/tmp/pids/puma.pid"
+# Specifies the `port` that Puma will listen on to receive requests; default is 3000.
+port ENV.fetch("PORT", 3000)
+
+# Allow puma to be restarted by `bin/rails restart` command.
+plugin :tmp_restart
+
+# Specify the PID file. Defaults to tmp/pids/server.pid in development.
+# In other environments, only set the PID file if requested.
+pidfile ENV["PIDFILE"] if ENV["PIDFILE"]

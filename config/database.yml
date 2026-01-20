@@ -7,10 +7,11 @@
 default: &default
   adapter: postgresql
   encoding: unicode
-  username: postgres
-  password: 'ali'
-  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+  username: ali
+  password: 'shah'
+  pool: 5
   host: localhost
+  port: 5432
 
 development:
   <<: *default
@@ -21,11 +22,5 @@ test:
   database: eventspaces_test
 
 production:
-  adapter: postgresql
-  encoding: unicode
-  pool: 5
-  database: go-venues-database
-  username: postgres
-  password: go_venues_db
-  host: go-venues-database.cbke20q08g0v.ap-south-1.rds.amazonaws.com
-  port: 5432
+  <<: *default
+  url: <%= ENV['DATABASE_URL'] %>

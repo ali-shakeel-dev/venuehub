@@ -1,0 +1,16 @@
+current directory: /mnt/c/Users/Ali/Desktop/Code/venuehub/vendor/bundle/ruby/3.1.0/gems/debug-1.10.0/ext/debug
+/home/ali/.rbenv/versions/3.1.0/bin/ruby -I /home/ali/.rbenv/versions/3.1.0/lib/ruby/3.1.0 -r ./siteconf20260120-25133-jo712h.rb extconf.rb
+creating Makefile
+
+current directory: /mnt/c/Users/Ali/Desktop/Code/venuehub/vendor/bundle/ruby/3.1.0/gems/debug-1.10.0/ext/debug
+make DESTDIR\= clean
+
+current directory: /mnt/c/Users/Ali/Desktop/Code/venuehub/vendor/bundle/ruby/3.1.0/gems/debug-1.10.0/ext/debug
+make DESTDIR\=
+compiling debug.c
+compiling iseq_collector.c
+linking shared-object debug/debug.so
+
+current directory: /mnt/c/Users/Ali/Desktop/Code/venuehub/vendor/bundle/ruby/3.1.0/gems/debug-1.10.0/ext/debug
+make DESTDIR\= install
+/usr/bin/install -c -m 0755 debug.so ./.gem.20260120-25133-j6moc2/debug

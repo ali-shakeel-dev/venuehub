@@ -1,0 +1,19 @@
+current directory: /mnt/c/Users/Ali/Desktop/Code/venuehub/vendor/bundle/ruby/3.1.0/gems/bootsnap-1.18.4/ext/bootsnap
+/home/ali/.rbenv/versions/3.1.0/bin/ruby -I /home/ali/.rbenv/versions/3.1.0/lib/ruby/3.1.0 -r ./siteconf20260120-25133-ss6jwx.rb extconf.rb
+checking for fdatasync() in unistd.h... yes
+checking for whether -D_GNU_SOURCE is accepted as CPPFLAGS... yes
+checking for whether -O3 is accepted as CFLAGS... yes
+checking for whether -std=c99 is accepted as CFLAGS... yes
+creating Makefile
+
+current directory: /mnt/c/Users/Ali/Desktop/Code/venuehub/vendor/bundle/ruby/3.1.0/gems/bootsnap-1.18.4/ext/bootsnap
+make DESTDIR\= clean
+
+current directory: /mnt/c/Users/Ali/Desktop/Code/venuehub/vendor/bundle/ruby/3.1.0/gems/bootsnap-1.18.4/ext/bootsnap
+make DESTDIR\=
+compiling bootsnap.c
+linking shared-object bootsnap/bootsnap.so
+
+current directory: /mnt/c/Users/Ali/Desktop/Code/venuehub/vendor/bundle/ruby/3.1.0/gems/bootsnap-1.18.4/ext/bootsnap
+make DESTDIR\= install
+/usr/bin/install -c -m 0755 bootsnap.so ./.gem.20260120-25133-5ee2w7/bootsnap

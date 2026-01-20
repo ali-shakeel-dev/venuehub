@@ -1,0 +1,15 @@
+current directory: /mnt/c/Users/Ali/Desktop/Code/venuehub/vendor/bundle/ruby/3.1.0/gems/stringio-3.1.2/ext/stringio
+/home/ali/.rbenv/versions/3.1.0/bin/ruby -I /home/ali/.rbenv/versions/3.1.0/lib/ruby/3.1.0 -r ./siteconf20260120-25133-cg2ty1.rb extconf.rb
+creating Makefile
+
+current directory: /mnt/c/Users/Ali/Desktop/Code/venuehub/vendor/bundle/ruby/3.1.0/gems/stringio-3.1.2/ext/stringio
+make DESTDIR\= clean
+
+current directory: /mnt/c/Users/Ali/Desktop/Code/venuehub/vendor/bundle/ruby/3.1.0/gems/stringio-3.1.2/ext/stringio
+make DESTDIR\=
+compiling stringio.c
+linking shared-object stringio.so
+
+current directory: /mnt/c/Users/Ali/Desktop/Code/venuehub/vendor/bundle/ruby/3.1.0/gems/stringio-3.1.2/ext/stringio
+make DESTDIR\= install
+/usr/bin/install -c -m 0755 stringio.so ./.gem.20260120-25133-tjg1io
