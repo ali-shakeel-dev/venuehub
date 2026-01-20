@@ -19,7 +19,7 @@ WORKDIR /rails
 
 # Install gems
 COPY Gemfile Gemfile.lock ./
-RUN bundle install
+RUN bundle install --jobs 1
 
 # Copy application code
 COPY . .
