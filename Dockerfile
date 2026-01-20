@@ -10,6 +10,8 @@ RUN apt-get update -qq && \
     libpq-dev \
     libvips \
     libyaml-dev \
+    libxml2-dev \
+    libxslt1-dev \
     pkg-config \
     curl \
     && rm -rf /var/lib/apt/lists /var/cache/apt/archives
