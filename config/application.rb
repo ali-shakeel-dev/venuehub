@@ -7,7 +7,7 @@ require 'dotenv-rails'
 # you've limited to :test, :development, or :production.
 Bundler.require(*Rails.groups)
 
-Dotenv::Railtie.load if defined?(Dotenv)
+Dotenv::Rails.load if defined?(Dotenv)
 
 module Eventspaces
   class Application < Rails::Application
