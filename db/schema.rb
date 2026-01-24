@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.2].define(version: 2026_01_24_010341) do
+ActiveRecord::Schema[7.2].define(version: 2026_01_24_150727) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -85,9 +85,12 @@ ActiveRecord::Schema[7.2].define(version: 2026_01_24_010341) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.string "slug"
+    t.bigint "manager_id", null: false
+    t.index ["manager_id"], name: "index_spaces_on_manager_id"
     t.index ["slug"], name: "index_spaces_on_slug", unique: true
   end
 
   add_foreign_key "active_storage_attachments", "active_storage_blobs", column: "blob_id"
   add_foreign_key "active_storage_variant_records", "active_storage_blobs", column: "blob_id"
+  add_foreign_key "spaces", "managers"
 end

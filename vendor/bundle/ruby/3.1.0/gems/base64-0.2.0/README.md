@@ -46,3 +46,12 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 Bug reports and pull requests are welcome on GitHub at https://github.com/ruby/base64.
 
+User:
+Should be able to see listed venues by Venue Managers
+Should be able to filter by location, event type, venue type, price, and people
+Should be able to book the venue
+
+Venue Owners:
+Should be able to register as Venue Manager
+Should be able to do CRUD
+Should be able to see the bookings for venues in a clean dashboard

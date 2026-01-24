@@ -1,15 +1,17 @@
 class SpacesController < ApplicationController
+  before_action :authenticate_manager!
+
   before_action :set_space, only: [:inquire, :submit_inquiry]
   def inquire
   end
 
   def new
-    @space = Space.new
+    @space = current_manager.spaces.new
     render 'list_space'
   end 
 
   def create
-    @space = Space.new(space_params)
+    @space = current_manager.spaces.new(space_params)
     if @space.save
       redirect_to @space
     else
