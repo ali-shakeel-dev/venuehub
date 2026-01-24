@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  devise_for :managers
   root "homes#index"
   get 'spaces/list_space', to: 'spaces#new', as: 'list_space'
   resources :spaces, param: :slug do
