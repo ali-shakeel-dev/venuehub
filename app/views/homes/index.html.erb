@@ -4,30 +4,30 @@
 <section class="hidden md:block py-4 w-full">
   <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
 
-    <div class="text-center p-6 rounded-lg bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
-      <h5 class="mb-2 text-2xl font-medium tracking-tight text-gray-900 dark:text-white">Browse Venues</h5>
-      <p class="text-gray-700 dark:text-gray-400">
+    <div class="text-center p-6 rounded-lg bg-gray-100">
+      <h5 class="mb-2 text-2xl font-medium tracking-tight text-gray-900">Browse Venues</h5>
+      <p class="text-gray-700">
         Find venues for weddings, parties, and meetings in one place.
       </p>
     </div>
 
-    <div class="text-center p-6 rounded-lg bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
-      <h5 class="mb-2 text-2xl font-medium tracking-tight text-gray-900 dark:text-white">Book Spaces</h5>
-      <p class="text-gray-700 dark:text-gray-400">
+    <div class="text-center p-6 rounded-lg bg-gray-100">
+      <h5 class="mb-2 text-2xl font-medium tracking-tight text-gray-900">Book Spaces</h5>
+      <p class="text-gray-700">
         Book event spaces easily with no hidden fees or extra charges.
       </p>
     </div>
 
-    <div class="text-center p-6 rounded-lg bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
-      <h5 class="mb-2 text-2xl font-medium tracking-tight text-gray-900 dark:text-white">List Your Space</h5>
-      <p class="text-gray-700 dark:text-gray-400">
+    <div class="text-center p-6 rounded-lg bg-gray-100">
+      <h5 class="mb-2 text-2xl font-medium tracking-tight text-gray-900">List Your Space</h5>
+      <p class="text-gray-700">
         List your venue and start earning by showcasing it to planners.
       </p>
     </div>
 
-    <div class="text-center p-6 rounded-lg bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
-      <h5 class="mb-2 text-2xl font-medium tracking-tight text-gray-900 dark:text-white">Plan Events</h5>
-      <p class="text-gray-700 dark:text-gray-400">
+    <div class="text-center p-6 rounded-lg bg-gray-100">
+      <h5 class="mb-2 text-2xl font-medium tracking-tight text-gray-900">Plan Events</h5>
+      <p class="text-gray-700">
         Manage bookings, check availability, and organize events with ease.
       </p>
     </div>
@@ -37,7 +37,7 @@
 <section class="py-4 w-full">
 
   <form class="w-full md:max-w-[60%] mx-auto flex gap-4">
-    <select id="location" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+    <select id="location" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5">
       <option selected>Location</option>
       <option value="90" data-label="Manhattan" data-counter-prefix="" data-counter-suffix="">Manhattan</option>
       <option value="98" data-label="Manhattan, Midtown" data-counter-prefix="" data-counter-suffix="">Manhattan, Midtown</option>
@@ -84,7 +84,7 @@
       <option value="94" data-label="Montgomery" data-counter-prefix="" data-counter-suffix="">Montgomery</option>
     </select>
 
-    <select id="event" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+    <select id="event" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5">
       <option selected>Event</option>
       <option value="14" data-label="Holiday Party" data-counter-prefix="" data-counter-suffix="">Holiday Party</option>
       <option value="24" data-label="Halloween" data-counter-prefix="" data-counter-suffix="">Halloween</option>
@@ -120,7 +120,7 @@
 
     </select>
 
-    <select id="venue" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+    <select id="venue" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5">
       <option selected>Venue</option>
       <option value="32" data-label="Private Bar" data-counter-prefix="" data-counter-suffix="">Private Bar</option>
       <option value="26" data-label="Lofts" data-counter-prefix="" data-counter-suffix="">Lofts</option>
@@ -151,13 +151,13 @@
   </form>
   <div class="w-full md:max-w-[60%] mx-auto flex justify-between gap-4 py-2">
     <div class="relative w-full text-center">
-      <input type="range" value="1500" min="100" max="1500" step="1" class="main_range outline-none w-full h-1 mb-2 bg-gray-200 rounded-lg appearance-none cursor-pointer range-sm dark:bg-gray-700">
+      <input type="range" value="1500" min="100" max="1500" step="1" class="main_range outline-none w-full h-1 mb-2 bg-gray-200 rounded-lg appearance-none cursor-pointer range-sm">
       <span class="text-sm text-gray-500 font-bold text-center">$50 /hr</span>
       -
       <span class="text-sm text-gray-500 font-bold text-center">$1500 /hr</span>
     </div>
     <div class="relative w-full text-center">
-      <input type="range" value="1500" min="100" max="1500" step="1" class="main_range outline-none w-full h-1 mb-2 bg-gray-200 rounded-lg appearance-none cursor-pointer range-sm dark:bg-gray-700">
+      <input type="range" value="1500" min="100" max="1500" step="1" class="main_range outline-none w-full h-1 mb-2 bg-gray-200 rounded-lg appearance-none cursor-pointer range-sm">
       <span class="text-sm text-gray-500 font-bold text-center">4ppl</span>
       -
       <span class="text-sm text-gray-500 font-bold text-center">500ppl</span>
@@ -169,70 +169,74 @@
 <section class="text-gray-600 body-font">
   <div class="py-8 mx-auto max-w-[1300px]">
     <div class="flex flex-wrap -m-4 justify-center">
-      <%@spaces.each do |space| %>
-      <div class="listing p-2 md:w-1/3 cursor-pointer">
-        <div class="h-full overflow-hidden border-2 border-gray-200 rounded-lg shadow-md hover:shadow-xl border-opacity-60">
-          <a>
-            <!-- Slides -->
-            <div id="carousel-<%= space.id %>" class="relative flex overflow-hidden h-56">
-              <% if space.images.attached? %>
-              <% space.images.each do |image| %>
-              <img src="<%= url_for(image) %>" class="w-full object-cover hidden carousel-image" alt="Space Image">
-              <% end %>
-              <% else %>
-              <p>No images available</p>
-              <% end %>
+      <% if @spaces.any? %>
+        <%@spaces.each do |space| %>
+          <div class="listing p-2 md:w-1/3 cursor-pointer">
+            <div class="h-full overflow-hidden border-2 border-gray-200 rounded-lg shadow-md hover:shadow-xl border-opacity-60">
+              <a>
+                <!-- Slides -->
+                <div id="carousel-<%= space.id %>" class="relative flex overflow-hidden h-56">
+                  <% if space.images.attached? %>
+                  <% space.images.each do |image| %>
+                  <img src="<%= url_for(image) %>" class="w-full object-cover hidden carousel-image" alt="Space Image">
+                  <% end %>
+                  <% else %>
+                  <p>No images available</p>
+                  <% end %>
 
-              <!-- Navigation Buttons -->
-              <button id="prevSlide" class="outline-none absolute left-0 top-1/2 transform -translate-y-1/2 bg-blue-600 text-white px-3 py-2">‹</button>
-              <button id="nextSlide" class="outline-none absolute right-0 top-1/2 transform -translate-y-1/2 bg-blue-600 text-white px-3 py-2">›</button>
-            </div>
-          </a>
-          <div class="p-6">
-            <span class="listing_details flex justify-between">
-              <a href="<%=space_path(space)%>">
-                <h2 class="listing_title mb-3 text-lg font-medium text-gray-900 title-font"><%=space.name%></h2>
+                  <!-- Navigation Buttons -->
+                  <button id="prevSlide" class="outline-none absolute left-0 top-1/2 transform -translate-y-1/2 bg-blue-600 text-white px-3 py-2">‹</button>
+                  <button id="nextSlide" class="outline-none absolute right-0 top-1/2 transform -translate-y-1/2 bg-blue-600 text-white px-3 py-2">›</button>
+                </div>
               </a>
-              <h2 class="listing_title mb-3 text-lg font-medium text-gray-900 title-font">$<%=space.per_hour%>/hr</h2>
-            </span>
-            <span class="listing_further_details flex justify-between mb-3 flex-col items-start">
-              <span class="listing_location flex items-center justify-center gap-2">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="size-4">
-                  <path fill-rule="evenodd" d="m7.539 14.841.003.003.002.002a.755.755 0 0 0 .912 0l.002-.002.003-.003.012-.009a5.57 5.57 0 0 0 .19-.153 15.588 15.588 0 0 0 2.046-2.082c1.101-1.362 2.291-3.342 2.291-5.597A5 5 0 0 0 3 7c0 2.255 1.19 4.235 2.292 5.597a15.591 15.591 0 0 0 2.046 2.082 8.916 8.916 0 0 0 .189.153l.012.01ZM8 8.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Z" clip-rule="evenodd" />
-                </svg>
-                <h2 class="listing_title font-medium text-gray-900 font-bold"><%=space.location%></h2>
-              </span>
-              <span class="listing_other_details flex items-center justify-center gap-2">
-                <span class="flex items-center gap-2">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="size-4">
-                    <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6ZM12.735 14c.618 0 1.093-.561.872-1.139a6.002 6.002 0 0 0-11.215 0c-.22.578.254 1.139.872 1.139h9.47Z" />
-                  </svg>
-                  <p class="text-gray-900"><%=space.capacity%> ppl</p>
+              <div class="p-6">
+                <span class="listing_details flex justify-between">
+                  <a href="<%=space_path(space)%>">
+                    <h2 class="listing_title mb-3 text-lg font-medium text-gray-900 title-font"><%=space.name%></h2>
+                  </a>
+                  <h2 class="listing_title mb-3 text-lg font-medium text-gray-900 title-font">$<%=space.per_hour%>/hr</h2>
                 </span>
-                <p class="text-gray-400">|</p>
-                <span class="flex items-center gap-2">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="size-4">
-                    <path fill-rule="evenodd" d="M2.75 9a.75.75 0 0 1 .75.75v1.69l2.22-2.22a.75.75 0 0 1 1.06 1.06L4.56 12.5h1.69a.75.75 0 0 1 0 1.5h-3.5a.75.75 0 0 1-.75-.75v-3.5A.75.75 0 0 1 2.75 9ZM2.75 7a.75.75 0 0 0 .75-.75V4.56l2.22 2.22a.75.75 0 0 0 1.06-1.06L4.56 3.5h1.69a.75.75 0 0 0 0-1.5h-3.5a.75.75 0 0 0-.75.75v3.5c0 .414.336.75.75.75ZM13.25 9a.75.75 0 0 0-.75.75v1.69l-2.22-2.22a.75.75 0 1 0-1.06 1.06l2.22 2.22H9.75a.75.75 0 0 0 0 1.5h3.5a.75.75 0 0 0 .75-.75v-3.5a.75.75 0 0 0-.75-.75ZM13.25 7a.75.75 0 0 1-.75-.75V4.56l-2.22 2.22a.75.75 0 1 1-1.06-1.06l2.22-2.22H9.75a.75.75 0 0 1 0-1.5h3.5a.75.75 0 0 1 .75.75v3.5a.75.75 0 0 1-.75.75Z" clip-rule="evenodd" />
-                  </svg>
-                  <p class="text-gray-900"><%=space.area%> sf</p>
+                <span class="listing_further_details flex justify-between mb-3 flex-col items-start">
+                  <span class="listing_location flex items-center justify-center gap-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="size-4">
+                      <path fill-rule="evenodd" d="m7.539 14.841.003.003.002.002a.755.755 0 0 0 .912 0l.002-.002.003-.003.012-.009a5.57 5.57 0 0 0 .19-.153 15.588 15.588 0 0 0 2.046-2.082c1.101-1.362 2.291-3.342 2.291-5.597A5 5 0 0 0 3 7c0 2.255 1.19 4.235 2.292 5.597a15.591 15.591 0 0 0 2.046 2.082 8.916 8.916 0 0 0 .189.153l.012.01ZM8 8.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Z" clip-rule="evenodd" />
+                    </svg>
+                    <h2 class="listing_title font-medium text-gray-900 font-bold"><%=space.location%></h2>
+                  </span>
+                  <span class="listing_other_details flex items-center justify-center gap-2">
+                    <span class="flex items-center gap-2">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="size-4">
+                        <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6ZM12.735 14c.618 0 1.093-.561.872-1.139a6.002 6.002 0 0 0-11.215 0c-.22.578.254 1.139.872 1.139h9.47Z" />
+                      </svg>
+                      <p class="text-gray-900"><%=space.capacity%> ppl</p>
+                    </span>
+                    <p class="text-gray-400">|</p>
+                    <span class="flex items-center gap-2">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="size-4">
+                        <path fill-rule="evenodd" d="M2.75 9a.75.75 0 0 1 .75.75v1.69l2.22-2.22a.75.75 0 0 1 1.06 1.06L4.56 12.5h1.69a.75.75 0 0 1 0 1.5h-3.5a.75.75 0 0 1-.75-.75v-3.5A.75.75 0 0 1 2.75 9ZM2.75 7a.75.75 0 0 0 .75-.75V4.56l2.22 2.22a.75.75 0 0 0 1.06-1.06L4.56 3.5h1.69a.75.75 0 0 0 0-1.5h-3.5a.75.75 0 0 0-.75.75v3.5c0 .414.336.75.75.75ZM13.25 9a.75.75 0 0 0-.75.75v1.69l-2.22-2.22a.75.75 0 1 0-1.06 1.06l2.22 2.22H9.75a.75.75 0 0 0 0 1.5h3.5a.75.75 0 0 0 .75-.75v-3.5a.75.75 0 0 0-.75-.75ZM13.25 7a.75.75 0 0 1-.75-.75V4.56l-2.22 2.22a.75.75 0 1 1-1.06-1.06l2.22-2.22H9.75a.75.75 0 0 1 0-1.5h3.5a.75.75 0 0 1 .75.75v3.5a.75.75 0 0 1-.75.75Z" clip-rule="evenodd" />
+                      </svg>
+                      <p class="text-gray-900"><%=space.area%> sf</p>
+                    </span>
+                    <p class="text-gray-400">|</p>
+                    <span class="flex items-center gap-2">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="size-4">
+                        <path d="M3.75 2a.75.75 0 0 0-.75.75v10.5a.75.75 0 0 0 1.28.53L8 10.06l3.72 3.72a.75.75 0 0 0 1.28-.53V2.75a.75.75 0 0 0-.75-.75h-8.5Z" />
+                      </svg>
+                      <p class="text-gray-900">Book a tour</p>
+                    </span>
+                  </span>
                 </span>
-                <p class="text-gray-400">|</p>
-                <span class="flex items-center gap-2">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="size-4">
-                    <path d="M3.75 2a.75.75 0 0 0-.75.75v10.5a.75.75 0 0 0 1.28.53L8 10.06l3.72 3.72a.75.75 0 0 0 1.28-.53V2.75a.75.75 0 0 0-.75-.75h-8.5Z" />
-                  </svg>
-                  <p class="text-gray-900">Book a tour</p>
-                </span>
-              </span>
-            </span>
 
-            <span class="listing_actions flex justify-between w-full gap-2 my-2">
-              <%= render 'components/button', button_link: space_path(space.slug), text_color: 'black', background_color: 'transparent', button_text: 'View Space', extra_classes: ''%>
-              <%= render 'components/button', button_link: inquire_space_path(space), text_color: 'black', background_color: 'transparent', button_text: 'Inquire', extra_classes: ''%>
-            </span>
+                <span class="listing_actions flex justify-between w-full gap-2 my-2">
+                  <%= render 'components/button', button_link: space_path(space.slug), text_color: 'black', background_color: 'transparent', button_text: 'View Space', extra_classes: ''%>
+                  <%= render 'components/button', button_link: inquire_space_path(space), text_color: 'black', background_color: 'transparent', button_text: 'Inquire', extra_classes: ''%>
+                </span>
+              </div>
+            </div>
           </div>
-        </div>
-      </div>
+        <% end %>
+      <% else %>
+        <span>We have no venues listed at this moment!</span>
       <% end %>
     </div>
   </div>

@@ -100,3 +100,15 @@ I welcome contributions from the community! Please follow these steps:
 
 ## Contact
 For questions or support, please reach out to [muhammadalishakeel77@gmail.com].
+
+
+User
+Can browse venues
+Can filter venues with filters
+Can book venue
+
+Venue Manager:
+
+Can register as venue manager
+Can post and manage their own listings
+Can see the bookings

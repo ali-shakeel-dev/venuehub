@@ -1,8 +1,15 @@
 class SpacesController < ApplicationController
   before_action :authenticate_manager!
 
-  before_action :set_space, only: [:inquire, :submit_inquiry]
+  before_action :set_space, only: [:inquire, :submit_inquiry, :show, :edit, :destroy]
   def inquire
+  end
+
+  def index
+    @spaces = current_manager.spaces
+  end
+
+  def edit
   end
 
   def new
@@ -16,6 +23,14 @@ class SpacesController < ApplicationController
       redirect_to @space
     else
       render :new
+    end
+  end
+
+  def destroy
+    if @space.destroy
+      redirect_to spaces_path
+    else
+      redirect_to spaces_path
     end
   end
 
@@ -33,6 +48,6 @@ class SpacesController < ApplicationController
   end
 
   def set_space
-    @space = Space.friendly.find(params[:slug])
+    @space = current_manager.spaces.friendly.find(params[:slug])
   end
 end
