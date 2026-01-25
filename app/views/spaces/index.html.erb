@@ -58,33 +58,20 @@
                       </svg>
                       <p class="text-gray-900">Book a tour</p>
                     </span>
-
+                    </span>
+                  </span>
                     
-                    </span>
-                    </span>
-                    
-                    <span class="listing_actions flex justify-between w-full gap-2 my-2">
-                    <%= render 'components/button', button_link: space_path(space.slug), text_color: 'black', background_color: 'transparent', button_text: 'View Space', extra_classes: ''%>
-                    <%= render 'components/button', button_link: inquire_space_path(space), text_color: 'black', background_color: 'transparent', button_text: 'Inquire', extra_classes: ''%>
-                    </span>
-
+                  <span class="listing_actions flex justify-between w-full gap-2 my-2">
+                  <%= render 'components/button', button_link: space_path(space.slug), text_color: 'black', background_color: 'transparent', button_text: 'View Space', extra_classes: ''%>
+                  <%= render 'components/button', button_link: inquire_space_path(space), text_color: 'black', background_color: 'transparent', button_text: 'Inquire', extra_classes: ''%>
+                  </span>
+                  <p class="text-center font-bold py-2">Admin Actions</p>
+                  <span class="flex gap-2 items-center justify-center w-full">
                     <!---- Venue Admin Actions --->
-                    <button id="dropdownDefaultButton" data-dropdown-toggle="dropdown" class="inline-flex items-center justify-center bg-gray-200 box-border border border-transparent shadow-xs font-medium leading-5 rounded-base text-sm px-4 py-2.5 focus:outline-none w-full" type="button">
-                      Actions 
-                      <svg class="w-4 h-4 ms-1.5 -me-0.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 9-7 7-7-7"/></svg>
-                    </button>
-                    
-                    <!-- Dropdown menu -->
-                    <div id="dropdown" class="z-10 hidden bg-gray-50 border border-default-medium rounded-base shadow-lg w-1/3">
-                        <ul class="p-2 text-sm text-body font-medium" aria-labelledby="dropdownDefaultButton">
-                          <li>
-                            <%= link_to "Edit Listing", edit_space_path(space), class: "inline-flex items-center w-full p-2 hover:bg-gray-200 hover:text-heading rounded" %>
-                          </li>
-                          <li>
-                            <%= link_to "Delete Listing", space_path(space), data: {turbo_method: :delete}, class: "inline-flex items-center w-full p-2 hover:bg-gray-200 hover:text-heading rounded" %>
-                          </li>
-                        </ul>
-                      </div>
+                    <%= link_to "Edit Listing", edit_space_path(space), class: "inline-flex items-center p-2 px-4 hover:bg-gray-200 hover:text-heading rounded text-center border border-blue" %>
+                    <%= button_to "Delete Listing", space_path(space), method: :delete, class: "inline-flex items-center p-2 px-4 hover:bg-red-300 hover:text-black rounded text-center border border-blue" %>
+                  </span>
+                  
               </div>
             </div>
           </div>
@@ -171,3 +158,52 @@
     </div>
   </div>
 </section>
+
+<script>
+  const carousels = document.querySelectorAll('[id^="carousel-"]');
+
+  carousels.forEach((carousel) => {
+    const images = carousel.querySelectorAll('.carousel-image');
+    let currentIndex = 0;
+
+    function showImage(index) {
+      images.forEach((image, idx) => {
+        image.classList.toggle('hidden', idx !== index);
+      });
+    }
+
+    showImage(currentIndex);
+
+    const prevButton = carousel.querySelector('#prevSlide');
+    const nextButton = carousel.querySelector('#nextSlide');
+
+    prevButton.addEventListener('click', function() {
+      currentIndex = (currentIndex - 1 + images.length) % images.length;
+      showImage(currentIndex);
+    });
+
+    nextButton.addEventListener('click', function() {
+      currentIndex = (currentIndex + 1) % images.length;
+      showImage(currentIndex);
+    });
+  });
+
+  // Input ranges bg color change
+  function updateRangeBackground(inputElement, value) {
+    const min = parseInt(inputElement.min);
+    const max = parseInt(inputElement.max);
+    const percentage = ((value - min) / (max - min)) * 100;
+
+    inputElement.style.background = `linear-gradient(to right,#2563EB ${percentage}%, #E5E7EB ${percentage}%)`;
+  }
+
+  const rangeInputs = document.querySelectorAll('.main_range');
+
+  rangeInputs.forEach(input => {
+    updateRangeBackground(input, input.value);
+
+    input.addEventListener('input', (e) => {
+      updateRangeBackground(e.target, e.target.value);
+    });
+  });
+</script>

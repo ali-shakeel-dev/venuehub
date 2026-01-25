@@ -1,7 +1,7 @@
 class SpacesController < ApplicationController
   before_action :authenticate_manager!
 
-  before_action :set_space, only: [:inquire, :submit_inquiry, :show, :edit, :destroy]
+  before_action :set_space, only: [:inquire, :submit_inquiry, :show, :edit, :destroy, :update]
   def inquire
   end
 
@@ -26,6 +26,14 @@ class SpacesController < ApplicationController
     end
   end
 
+  def update 
+    if @space.update(space_params)
+      redirect_to spaces_path
+    else
+      redirect_to spaces_path
+    end
+  end
+  
   def destroy
     if @space.destroy
       redirect_to spaces_path

@@ -1,6 +1,6 @@
 <%= form_with model: @space, local: true, multipart: true, class: "space-form mx-auto mt-4 p-6" do |form| %>
   <!-- Image Upload Section -->
-  <div class="my-4 rounded-lg dark:bg-gray-800 dark:border-gray-700 flex flex-wrap items-center gap-4 w-full" id="image-preview-container">
+  <div class="my-4 rounded-lg flex flex-wrap items-center gap-4 w-full" id="image-preview-container">
     <% if @space.images.attached? %>
       <% @space.images.each do |image| %>
         <div class="relative">
